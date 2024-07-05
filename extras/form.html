@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+   <!-- informações do documento -->
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!-- informações da página -->
+   <meta name="description" content="Portfolio - Challenge Oracle/Alura - Programa ONE">
+   <meta name="keywords" content="html, css, js, JavaScript, Alura, Oracle, ONE, Challenge, currículo">
+   <meta name="author" content="Neto Paiva">
+
+   <!-- título da página -->
+   <title>Formulário | Portfolio</title>
+   <link rel="shortcut icon" href="assets/imagens/netopaiva_icon.svg" type="image/x-icon">
+
+   <!-- fontes -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+   <!-- CSS configurações básica -->
+   <link rel="stylesheet" href="./assets/css/basic/normalize.css">
+   <link rel="stylesheet" href="./assets/css/basic/base.css">
+   <link rel="stylesheet" href="./assets/css/basic/botao.css">
+
+   <link rel="stylesheet" href="./assets/css/contato/contato.css">
+   <link rel="stylesheet" href="./assets/css/formulario/formulario.css">
+   <link rel="stylesheet" href="./assets/css/projetos/projetos.css">
+</head>
+
+<body>
+
+   <section class="projetos__container">
+      <h2 class="projetos__titulo">Seção anterior</h2>
+   </section>
+
+   <section class="contato__container">
+
+      <div class="contato__imagem"></div>
+
+      <div class="contato__container--interno">
+
+         <div class="contato__container--textos">
+            <h2 class="contato__titulo">Contato</h2>
+            <p class="contato__texto">Quer entrar em contato comigo? Preencha o formulário ao lado e entrarei em contato
+               o mais rápido possível.</p>
+         </div>
+
+         <form action="" class="formulario__container">
+
+            <fieldset class="formulario__fieldset">
+
+               <div class="input__container">
+
+                  <input class="input__campo input__nome" data-form="nome" name="nome" type="text" placeholder="Nome" title="Digite seu nome" minlength="9" required>
+
+                  <label class="input__label" data-label="nome" for="Nome">Nome</label>
+
+                  <span class="input__erro" data-span="nome">Favor preencher com seu nome completo.</span>
+
+               </div>
+
+               <div class="input__container">
+
+                  <input class="input__campo input__email" data-form="email" name="email" type="email"
+                     placeholder="E-mail" title="Digite seu e-mail" required>
+
+                  <label class="input__label" data-label="email" for="E-mail">E-mail</label>
+
+                  <span class="input__erro" data-span="email">
+                     Favor preencher com seu email válido.
+                  </span>
+
+               </div>
+
+               <div class="input__container">
+
+                  <input class="input__campo input__assunto" data-form="assunto" name="assunto" type="text"
+                     minlength="10" placeholder="Assunto" title="Digite o assunto da mensagem" required>
+
+                  <label class="input__label" data-label="assunto" for="Assunto">Assunto</label>
+
+                  <span class="input__erro" data-span="assunto">Favor descrever qual o assunto.</span>
+
+               </div>
+
+               <div class="input__container">
+
+                  <textarea class="input__campo input__mensagem" data-form="mensagem" name="mensagem" minlength="50"
+                     maxlength="300" cols="" rows="" placeholder="Mensagem"
+                     title="Digite sua mensagem, máximo de 300 caracteres." required></textarea>
+
+                  <label class="input__label" data-label="mensagem" for="Mensagem">Mensagem</label>
+
+                  <span class="input__erro" data-span="mensagem">Favor escrever sua a mensagem com mínimo de 50
+                     caracteres e máximo de 300.</span>
+
+               </div>
+
+            </fieldset>
+
+            <button class="formulario__botao botao__primario" data-btn="botao"
+               title="Clique para enviar a mensagem">Enviar mensagem</button>
+
+         </form>
+
+      </div>
+
+   </section>
+
+   <script src="./assets/js/validar.js" type="module"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+/*
+  a configuração CSS dos componentes do "sobre"
+  serão exportadas para o arquivo "assets/css/sobre/sobre.css"
+ */
+
+/* mobile */
+
+.sobre__imagem{
+  margin-top: 0.5625rem;
+  width: 3.25rem;
+}
+
+/* tablete */
+
+@media screen and (min-width:768px){
+
+  .sobre__imagem{
+    width: 4.5rem;
+  }
+
+}
+
+/* laptop */
+
+@media screen and (min-width:1024px) {
+
+  .sobre__imagem{
+    width: 5.75rem;
+  }
+
+}
+
+/* desktop */
+
+@media screen and (min-width:1440px) {
+
+  /* sem alterações */
+
+}
+
+
+/* --- fim ;) */

@@ -1,0 +1,38 @@
+/*
+  a configuração CSS dos componentes do "header-nav"
+  serão exportadas para o arquivo "assets/css/nav/nav.css"
+ */
+
+/* mobile */
+
+.nav__lista {
+  display: flex;
+  justify-content: space-between;
+
+  list-style: none;
+}
+
+/* tablete */
+
+@media screen and (min-width:764px) {
+
+  .nav__lista{
+    display: flex;
+    justify-content: space-between;
+  }
+
+}
+
+/* laptop */
+
+@media screen and (min-width:1024px) {
+
+  .nav__lista {
+    display: flex;
+    flex-direction: row;
+  }
+
+}
+
+
+ /* --- fim ;) */

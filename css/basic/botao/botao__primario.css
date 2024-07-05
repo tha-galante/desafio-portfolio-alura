@@ -1,0 +1,82 @@
+/*
+  a configuração CSS dos componentes do "botao"
+  serão exportadas para o arquivo "botao.css"
+  dentro da pasta "/assets/css/basic/botao.css"
+ */
+
+/* mobile */
+
+.botao__primario{
+  background-color: var(--azul100);
+
+  border: 1px solid var(--azul100);
+  box-sizing: border-box;
+
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--branco);
+  text-align: center;
+  
+  padding: 0.75rem 1rem;
+}
+
+.botao__primario:hover{
+  background-color: var(--azul80);
+
+  border: 1px solid var(--azul80);
+  box-sizing: border-box;
+  
+  cursor: pointer;
+
+  font-size: 1rem;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+
+
+/* tablete */
+@media screen and (min-width:768px){
+  /* sem alterações */
+}
+
+/* laptop */
+@media screen and (min-width:1024px) {
+
+  .botao__primario{
+    background-color: var(--azul100);
+
+    border: 1px solid var(--azul100);
+    box-sizing: border-box;
+  
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--branco);
+    text-align: center;
+    
+    padding: 1rem;
+  }
+  
+  .botao__primario:hover{
+    background-color: var(--azul80);
+  }
+  
+}
+
+/* desktop */
+@media screen and (min-width:1440px) {
+  /* sem alterações */
+}
+
+
+/* telas maiores */
+@media screen and (min-width:1450px) {
+
+  .formulario__botao{
+    margin-top: 23px;
+  }
+
+}
+
+
+/* --- fim ;) */

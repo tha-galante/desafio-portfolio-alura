@@ -1,0 +1,42 @@
+/*
+  a configuração CSS dos componentes do "formulário"
+  serão exportadas para o arquivo "assets/css/formulario/formulario.css"
+ */
+
+/* mobile */
+
+.input__container{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  box-sizing: border-box;
+
+  /* font-weight: 700; */
+}
+
+
+/* tablete */
+
+@media screen and (min-width:768px){
+
+}
+
+/* laptop */
+
+@media screen and (min-width:1024px) {
+
+}
+
+/* desktop */
+
+@media screen and (min-width:1440px) {
+
+  .input__container{
+    height: 100%;
+    max-height: 37.0625rem;
+  }
+
+}
+
+
+/* --- fim ;) */

@@ -1,0 +1,35 @@
+/*
+  a configuração CSS dos componentes do "hobbies"
+  serão exportadas para o arquivo "assets/css/hobbies/hobbies.css"
+ */
+
+/* mobile */
+
+
+
+/* tablete */
+
+@media screen and (min-width:768px){
+
+
+
+}
+
+/* laptop */
+
+@media screen and (min-width:1024px) {
+
+
+
+}
+
+/* desktop */
+
+@media screen and (min-width:1440px) {
+
+  
+
+}
+
+
+/* --- fim ;) */

@@ -1,0 +1,96 @@
+/*
+  a configuração CSS dos componentes do "formulário"
+  serão exportadas para o arquivo "assets/css/formulario/formulario.css"
+ */
+
+/* mobile */
+
+.input__campo{
+  border: none;
+  border-bottom: 1px solid var(--cinza30);
+  border-radius: 4px;
+
+  box-sizing: border-box;
+
+  cursor:text;
+
+  color: var(--cinza100);
+  font-weight: 400;
+
+  height: 3.625rem;
+
+  padding-left: 0.75rem;
+}
+
+/* ação do placeholder */
+
+.input__campo::placeholder{
+  color: #00000000;
+
+  visibility: hidden;
+}
+
+/* ação ao clicar com mouse */
+
+.input__campo:focus{
+  border-radius: 4px;
+  border-bottom: 2px solid var(--azul100);
+
+  caret-color: var(--azul100);
+
+  cursor:progress;
+
+  outline: none;
+
+  padding-top: 0.85rem;
+}
+
+/* ação ao clicar no campo */
+
+.input__campo:not(:placeholder-shown) + .input__label,
+.input__campo:focus + .input__label {
+  font-size: 0.75rem;
+
+  top: 0.25rem;
+
+  transition: all .25s;
+}
+
+.input__campo:focus + .input__label {
+  color: var(--azul100);
+}
+
+
+/* se preenchimento válido */
+.input__campo:valid{
+  padding-top: 0.85rem;
+}
+
+/* se preenchimento inválido */
+.input__campo:invalid {
+  color: var(--cinza50);
+  padding-top: 0.85rem;
+  /* border-bottom: 2px solid var(--azul100); */
+}
+
+
+/* tablete */
+
+@media screen and (min-width:768px){
+
+}
+
+/* laptop */
+
+@media screen and (min-width:1024px) {
+
+}
+
+/* desktop */
+
+@media screen and (min-width:1440px) {
+
+}
+
+
+/* --- fim ;) */

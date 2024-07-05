@@ -1,0 +1,52 @@
+/*
+  a configuração CSS dos componentes do "formacao"
+  serão exportadas para o arquivo "assets/css/formacao/formacao.css"
+ */
+
+/* mobile */
+
+.formacao__container{
+  background-color: var(--azul10);
+
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
+  padding: 2rem;
+}
+
+/* tablete */
+
+@media screen and (min-width:768px){
+
+  /* sem alterações */
+}
+
+/* laptop */
+
+@media screen and (min-width:1024px) {
+
+  .formacao__container{
+    margin: auto;
+    /* margin-bottom: 3.5rem; */
+    padding: 2rem 7rem;
+
+    max-width: 71rem;
+  }
+
+}
+
+/* desktop */
+
+@media screen and (min-width:1440px) {
+
+  .formacao__container{
+    padding: 5.125rem 9.5rem;
+
+    max-width: 80rem;
+  }
+
+}
+
+
+/* --- fim ;) */
